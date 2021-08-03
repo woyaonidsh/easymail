@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>sentEmail</class>
+ <widget class="QMainWindow" name="sentEmail">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1222</width>
+    <height>683</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#sentmail{
+background-color: rgb(159,197,232);
+}
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">#centralwidget{
+background-color: rgb(159,197,232);
+}
+</string>
+   </property>
+   <widget class="QTextEdit" name="textEdit">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>140</y>
+      <width>891</width>
+      <height>491</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_preview">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>10</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#pushButton_preview:hover{
+background-color:rgb(204,204,204);
+border-radius:10px;
+}
+#pushButton_preview:!hover{
+background-color:rgb(225,225,225);
+border-radius:10px;
+}
+#pushButton_preview:hover:pressed{
+background-color:rgb(0,255,0);
+border-radius:10px;
+}</string>
+    </property>
+    <property name="text">
+     <string>预览</string>
+    </property>
+    <property name="icon">
+     <iconset resource="Resource.qrc">
+      <normaloff>:/new/prefix1/icon/preview_32.ico</normaloff>:/new/prefix1/icon/preview_32.ico</iconset>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>90</y>
+      <width>61</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>主  题(I)：</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_cancel">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>10</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#pushButton_cancel:hover{
+background-color:rgb(204,204,204);
+border-radius:10px;
+}
+#pushButton_cancel:!hover{
+background-color:rgb(225,225,225);
+border-radius:10px;
+}
+#pushButton_cancel:hover:pressed{
+background-color:rgb(0,255,0);
+border-radius:10px;
+}</string>
+    </property>
+    <property name="text">
+     <string>退出</string>
+    </property>
+    <property name="icon">
+     <iconset resource="Resource.qrc">
+      <normaloff>:/new/prefix1/icon/exit_32.ico</normaloff>:/new/prefix1/icon/exit_32.ico</iconset>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="listWidget_contacts">
+    <property name="geometry">
+     <rect>
+      <x>930</x>
+      <y>50</y>
+      <width>256</width>
+      <height>581</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_sent">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>75</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#pushButton_sent:hover{
+background-color:rgb(204,204,204);
+border-radius:10px;
+}
+#pushButton_sent:!hover{
+background-color:rgb(225,225,225);
+border-radius:10px;
+}
+#pushButton_sent:hover:pressed{
+background-color:rgb(0,255,0);
+border-radius:10px;
+}</string>
+    </property>
+    <property name="text">
+     <string>发送</string>
+    </property>
+    <property name="icon">
+     <iconset resource="Resource.qrc">
+      <normaloff>:/new/prefix1/icon/send_32.ico</normaloff>:/new/prefix1/icon/send_32.ico</iconset>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>930</x>
+      <y>20</y>
+      <width>91</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>所有联系人：</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>60</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>81</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="text">
+     <string>收件人(T)：</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_receiver">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>60</y>
+      <width>821</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#lineEdit_receiver{
+border-radius:6px;
+}</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_subject">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>99</y>
+      <width>821</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#lineEdit_subject{
+border-radius:6px;
+}</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_Draft">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>10</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#pushButton_Draft:hover{
+background-color:rgb(204,204,204);
+border-radius:10px;
+}
+#pushButton_Draft:!hover{
+background-color:rgb(225,225,225);
+border-radius:10px;
+}
+#pushButton_Draft:hover:pressed{
+background-color:rgb(0,255,0);
+border-radius:10px;
+}</string>
+    </property>
+    <property name="text">
+     <string>存草稿</string>
+    </property>
+    <property name="icon">
+     <iconset resource="Resource.qrc">
+      <normaloff>:/new/prefix1/icon/caogao_32.ico</normaloff>:/new/prefix1/icon/caogao_32.ico</iconset>
+    </property>
+   </widget>
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>910</x>
+      <y>10</y>
+      <width>21</width>
+      <height>621</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_add">
+    <property name="geometry">
+     <rect>
+      <x>814</x>
+      <y>10</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#pushButton_add:hover{
+background-color:rgb(204,204,204);
+border-radius:10px;
+}
+#pushButton_add:!hover{
+background-color:rgb(225,225,225);
+border-radius:10px;
+}
+#pushButton_add:hover:pressed{
+background-color:rgb(0,255,0);
+border-radius:10px;
+}</string>
+    </property>
+    <property name="text">
+     <string>添加附件</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>icon/net_32.ico</normaloff>icon/net_32.ico</iconset>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_notice">
+    <property name="geometry">
+     <rect>
+      <x>733</x>
+      <y>15</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <tabstops>
+  <tabstop>lineEdit_receiver</tabstop>
+  <tabstop>lineEdit_subject</tabstop>
+  <tabstop>textEdit</tabstop>
+  <tabstop>pushButton_sent</tabstop>
+  <tabstop>pushButton_preview</tabstop>
+  <tabstop>pushButton_Draft</tabstop>
+  <tabstop>pushButton_cancel</tabstop>
+  <tabstop>listWidget_contacts</tabstop>
+  <tabstop>pushButton_add</tabstop>
+ </tabstops>
+ <resources>
+  <include location="Resource.qrc"/>
+ </resources>
+ <connections/>
+</ui>

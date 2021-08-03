@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>addfriend</class>
+ <widget class="QMainWindow" name="addfriend">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>200</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>400</width>
+    <height>200</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>400</width>
+    <height>200</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#addfriend{
+background-color: rgb(159,197,232);
+}
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="minimumSize">
+    <size>
+     <width>400</width>
+     <height>200</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>400</width>
+     <height>200</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#centralwidget{
+background-color: rgb(159,197,232);
+}
+</string>
+   </property>
+   <widget class="QLineEdit" name="lineEdit">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>60</y>
+      <width>241</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#lineEdit{
+border-radius:8px;
+}</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>130</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#pushButton:hover{
+	font: 11pt &quot;楷体&quot;;
+border-radius:10px;
+background-color:rgb(204,204,204);
+}
+#pushButton:!hover{
+	font: 11pt &quot;楷体&quot;;
+border-radius:10px;
+background-color:rgb(225,225,225);
+}
+#pushButton:hover:pressed{
+	font: 11pt &quot;楷体&quot;;
+border-radius:10px;
+background-color:rgb(74,134,232);
+}</string>
+    </property>
+    <property name="text">
+     <string>添加</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_2">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>90</y>
+      <width>241</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#lineEdit_2{
+border-radius:8px;
+}</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>60</y>
+      <width>71</width>
+      <height>54</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QLabel" name="label_2">
+       <property name="styleSheet">
+        <string notr="true">font: 9pt &quot;楷体&quot;;</string>
+       </property>
+       <property name="text">
+        <string>  用户名</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="styleSheet">
+        <string notr="true">font: 9pt &quot;楷体&quot;;</string>
+       </property>
+       <property name="text">
+        <string>设置昵称</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QLabel" name="label_notice">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>130</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 9pt &quot;楷体&quot;;</string>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

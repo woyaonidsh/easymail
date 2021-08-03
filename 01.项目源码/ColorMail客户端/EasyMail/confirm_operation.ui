@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Confirm_operation</class>
+ <widget class="QMainWindow" name="Confirm_operation">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>355</width>
+    <height>220</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>355</width>
+    <height>220</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>355</width>
+    <height>220</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#Confirm_operation{
+background-color: rgb(159,197,232);
+}
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">#centralwidget{
+background-color: rgb(159,197,232);
+}
+</string>
+   </property>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>30</y>
+      <width>131</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 16pt &quot;楷体&quot;;</string>
+    </property>
+    <property name="text">
+     <string>确认删除？</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="confirm">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>120</y>
+      <width>89</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#confirm:hover{
+border-radius:10px;
+font: 11pt &quot;楷体&quot;;
+background-color:rgb(204,204,204);
+}
+#confirm:!hover{
+border-radius:10px;
+font: 11pt &quot;楷体&quot;;
+background-color:rgb(225,225,225);
+}
+#confirm:hover:pressed{
+border-radius:10px;
+font: 11pt &quot;楷体&quot;;
+background-color:rgb(120,164,4);
+}</string>
+    </property>
+    <property name="text">
+     <string>确认</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="cancel">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>120</y>
+      <width>89</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#cancel:hover{
+border-radius:10px;
+	font: 11pt &quot;楷体&quot;;
+background-color:rgb(204,204,204);
+}
+#cancel:!hover{
+border-radius:10px;
+	font: 11pt &quot;楷体&quot;;
+background-color:rgb(225,225,225);
+}
+#cancel:hover:pressed{
+border-radius:10px;
+	font: 11pt &quot;楷体&quot;;
+background-color:rgb(120,164,4);
+}</string>
+    </property>
+    <property name="text">
+     <string>取消</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

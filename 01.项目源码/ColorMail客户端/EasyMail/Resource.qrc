@@ -1,0 +1,34 @@
+<RCC>
+    <qresource prefix="/new/prefix1">
+        <file>icon/add_32.ico</file>
+        <file>icon/cancel_32.ico</file>
+        <file>icon/connecter_32.ico</file>
+        <file>icon/delete_32.ico</file>
+        <file>icon/download_32.ico</file>
+        <file>icon/exit_32.ico</file>
+        <file>icon/login_32.ico</file>
+        <file>icon/mail_32.ico</file>
+        <file>icon/net_32.ico</file>
+        <file>icon/receive_32.ico</file>
+        <file>icon/send_32.ico</file>
+        <file>icon/sendemail_32.ico</file>
+        <file>picture/background.jpg</file>
+        <file>picture/ku.jpg</file>
+        <file>picture/kuer.jpg</file>
+        <file>picture/OHR.FinancialTowers_ZH-CN6494148642_1920x1080.jpg</file>
+        <file>picture/OHR.MakeHay_ZH-CN5759590757_1920x1080.jpg</file>
+        <file>picture/wallhaven-95xx81_3840x2160.png</file>
+        <file>picture/ARCX .jpg</file>
+        <file>picture/bgimage.jpg</file>
+        <file>icon/add__32.ico</file>
+        <file>icon/bin_32.ico</file>
+        <file>icon/caogao_32.ico</file>
+        <file>icon/caogaoxiang_32.ico</file>
+        <file>icon/icon</file>
+        <file>icon/like_32.ico</file>
+        <file>icon/preview_32.ico</file>
+        <file>icon/registe_32.ico</file>
+        <file>icon/upload_32.ico</file>
+        <file>icon/view_32.ico</file>
+    </qresource>
+</RCC>
